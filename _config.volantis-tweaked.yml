@@ -425,7 +425,7 @@ plugins:
   # jquery
   globalJquery: false # 全局引入 jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js
-  fontawesome: https://cdn.jsdelivr.net/gh/inkss/fontawesome@6.0.0/css/all.min.css
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1/css/all.min.css
   # katex@0.15.2
   katex:
     js: https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js
