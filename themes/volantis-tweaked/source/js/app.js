@@ -27,14 +27,14 @@ const locationHash = () => {
     let locationID = decodeURI(window.location.hash.split('#')[1]).replace(/\ /g, '-');
     let target = document.getElementById(locationID);
     if (target) {
-      setTimeout(() => {
+      // setTimeout(() => {
         if (window.location.hash.startsWith('#fn')) { // hexo-reference https://github.com/volantis-x/hexo-theme-volantis/issues/647
           volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant', observer:true })
         } else {
           // 锚点中上半部有大片空白 高度大概是 volantis.dom.header.offsetHeight
           volantis.scroll.to(target, { addTop: 5, behavior: 'instant', observer:true })
         }
-      }, 1000)
+     //  }, 1000)
     }
   }
 }

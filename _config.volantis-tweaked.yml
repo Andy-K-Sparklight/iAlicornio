@@ -62,7 +62,6 @@ replace:
 dns_prefetch:
   - https://unpkg.com
   - https://cdn.jsdelivr.net
-  - https://cdnjs.com
 
 
 # 平滑滚动效果
@@ -90,9 +89,9 @@ navbar:
   # - name: 相关事件
   #   icon: fa-solid fa-link
   #   url: friends/
-  # - name: 事件来源
-  #   icon: fa-solid fa-info-circle
-  #   url: about/
+    - name: 关于此地
+      icon: fa-solid fa-info-circle
+      url: about/
     - name: 时间加速 # 可自定义
       icon: fa-solid fa-moon # 可自定义
       toggle: darkmode
@@ -236,7 +235,7 @@ article:
 ############################### Comments ############################### > start
 comments:
   title: '事件评论'
-  subtitle: '您有权保持沉默，但您在此的发言将是公开的。'
+  subtitle: '您有权保持沉默，但您若决定发言，则它们都将是公开的。<br/>如果您的言论令人不适，它会被删除，且您将被禁言最长达 114514 天。'
   service: giscus
 
   # https://giscus.app
@@ -250,7 +249,7 @@ comments:
     emit-metadata: "0"
     input-position: "top"
     lang: "zh-CN"
-    loading: "lazy"
+    # loading: "lazy"
     # 以上配置按照 yml 格式增删填写即可
     theme:
       light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
@@ -276,7 +275,7 @@ sidebar:
       shape: circle # circle, rectangle
       url: /about/
       title: 'Annie Sparklight'
-      subtitle: '奇遇不会老去，陈旧的只有伤疤'
+      subtitle: '新朋友，老对头……<br/>奇遇不会老去，陈旧的只有伤疤'
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-envelope
@@ -425,7 +424,7 @@ plugins:
   # jquery
   globalJquery: false # 全局引入 jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1/css/all.min.css
+  fontawesome: https://unpkg.com/@fortawesome/fontawesome-free@6.1/css/all.min.css
   # katex@0.15.2
   katex:
     js: https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js
@@ -473,7 +472,7 @@ plugins:
 
   ######## Plugins to optimize the experience:
   # 代码高亮
-  code_highlight: highlightjs # highlightjs or prismjs
+  code_highlight: prismjs # highlightjs or prismjs
   # highlight.js
   highlightjs:
     copy_code: true
@@ -490,12 +489,12 @@ plugins:
     copy_code: true
     # Please set hexo.config.highlight.enable = false !!! set hexo.config.prismjs.enable = true !!!
     js:
-      - https://unpkg.com/prismjs/components/prism-core.min.js
-      - https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js
-      - https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+      - https://cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
     css:
-      - https://unpkg.com/prismjs/themes/prism-dark.css
-      - https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css
+      - https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -900,7 +899,7 @@ color_scheme:
     # 代码块高亮时的背景色
     codeblock: '#FFF7EA'
     # 行内代码颜色
-    inlinecode: '#c74f00'
+    inlinecode: '#ff55a3'
 
     # 文章部分
     h1: '#3a3a3a'
@@ -910,6 +909,8 @@ color_scheme:
     h5: '#555'
     h6: '#666'
     p: '#444'
+    p-bold: '#333'
+    p-italic: '#888'
 
     # 列表文字
     list: '#666'
@@ -942,16 +943,18 @@ color_scheme:
     # 代码块高亮时的背景色     # Dark Grey 2
     codeblock: '#1f1f1f'
     # 行内代码颜色
-    inlinecode: '#D56D28'
+    inlinecode: '#ff55a3'
 
-    # 文章部分 高强度文本的不透明度应为87％ 中等重点文字适用于60％
-    h1: '#FFFFFFde'            #  Dark Grey 8
-    h2: '#FFFFFFde'
-    h3: '#FFFFFF99'            #  Dark Grey 7
-    h4: '#FFFFFF99'
-    h5: '#FFFFFF99'
-    h6: '#FFFFFF99'
+    # 文章部分 高强度文本的不透明度应为87％ 中等重点文字适用于60％ But it's very unclear
+    h1: '#FFFFFFef'            #  Dark Grey 8
+    h2: '#FFFFFFef'
+    h3: '#FFFFFFde'            #  Dark Grey 7
+    h4: '#FFFFFFde'
+    h5: '#FFFFFFde'
+    h6: '#FFFFFFde'
     p: '#d9d9d9de'           #  Dark Grey 6
+    p-bold: '#ffffffef'
+    p-italic: '#aeaeaebc'
 
     # 列表文字                #  Dark Grey 6
     list: '#d9d9d9de'
@@ -999,7 +1002,7 @@ custom_css:
       h4: left
       p: justify
   gap:
-    h2: 48px # Spacing above H2 (only px unit)
+    h2: 36px # Spacing above H2 (only px unit)
     h3: 24px # Spacing above H3 (only px unit)
     h4: 16px # Spacing above H4 (only px unit)
     p: 1em # Paragraph spacing between paragraphs
@@ -1011,33 +1014,33 @@ custom_css:
     button: 4px
   fontsize:
     root: 16px
-    h1: 1.5rem # 不推荐用在文章中
-    h2: 1.5rem
-    h3: 1.25rem
-    h4: 1.125rem
-    h5: 1rem
+    h1: 1.8rem # 不推荐用在文章中
+    h2: 1.8rem
+    h3: 1.5rem
+    h4: 1.25rem
+    h5: 1.125rem
     h6: 1rem
     list: .9375rem
     meta: .875rem
-    code: 1rem
+    code: 1.125rem
     footnote: .78125rem
   fontfamily:
     logofont:
-      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif'
       name: 'Varela Round'
       url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'UbuntuMono, "Open Sans", "Source Hans Sans", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: 'UbuntuMono, "Source Han Sans","Open Sans", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif'
       name: 'UbuntuMono'
       url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
       style: normal
     codefont:
-      fontfamily: 'Menlo, UbuntuMono'
-      name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      fontfamily: 'UbuntuMono, Menlo, Monaco, Consolas, "Courier New", Courier, monospace'
+      name: 'Source Han Sans'
+      url: https://cdn.jsdelivr.net/gh/Andy-K-Sparklight/iAlicornio@resources/SourceHanSansCN-Regular.otf
       weight: normal
       style: normal
 ############################### Custom css ############################### > end

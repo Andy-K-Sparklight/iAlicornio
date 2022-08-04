@@ -4,7 +4,7 @@ navbar:
   tag: 标签
 post:
   pin: 置顶
-  readmore: 阅读全文
+  readmore: 进入事件
   readoriginal: 去源站阅读
   wordcount: '字数：%s 字'
   duration: '时长：%s 分钟'

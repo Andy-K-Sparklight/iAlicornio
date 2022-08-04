@@ -15,12 +15,24 @@
   --color-h5: $color-h5
   --color-h6: $color-h6
   --color-p: $color-p
+  --color-p-bold: $color-p-bold
+  --color-p-italic: $color-p-italic
   --color-list: $color-list
   --color-list-hl: $color-list-hl
   --color-meta: $color-meta
   --color-read-bkg: $color-read-bkg
   --color-read-post: $color-read-post
   --color-copyright-bkg: $color-copyright-bkg
+
+
+.article strong {
+  color: var(--color-p-bold)
+}
+
+.article em {
+  color: var(--color-p-italic)
+  max-width: 95%
+}
 
 *
   box-sizing: border-box

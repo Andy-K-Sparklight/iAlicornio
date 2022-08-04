@@ -5,7 +5,7 @@ keywords: []
 author: Universe
 language: zh-CN
 
-url: https://ialicornio.pages.dev/
+url: https://ial.pages.dev/
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -34,14 +34,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -68,6 +68,3 @@ exclude:
 per_page: 10
 pagination_dir: page
 ignore:
-
-
-
