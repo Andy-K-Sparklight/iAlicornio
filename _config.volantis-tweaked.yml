@@ -274,7 +274,7 @@ sidebar:
       avatar: https://attachment.mcbbs.net/uc_server/data/avatar/003/28/10/25_avatar_big.jpg 
       shape: circle # circle, rectangle
       url: /about/
-      title: 'Annie Sparklight'
+      title: '<span style="font-size:1.5rem">Annie Sparklight</span>'
       subtitle: '新朋友，老对头……<br/>奇遇不会老去，陈旧的只有伤疤'
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
