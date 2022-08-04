@@ -3,7 +3,7 @@ title: Arch Linux 安装初级指南
 date: 2022-08-03 00:00:00
 categories:
   - 指南与教程
-description: 这是属于你的世界，我很荣幸为你敲开它的大门。
+description: 它并不困难， 只是有点特别。<br/>这是属于你的世界，我很荣幸为你敲开它的大门。
 ---
 
 ## 欢迎
