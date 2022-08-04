@@ -172,17 +172,17 @@ article:
       # ----------------
       # 版权声明组件 (for layout: post)
       copyright:
-        enable: false
+        enable: true
         permalink: '事件永久访问代码：'
         content: ''
          # 自定义版权组件：精细到文章的版权声明
-        custom: false # 开启后替代上方内容的版权显示
+        custom: true # 开启后替代上方内容的版权显示
         customData:
-          default: type1  # 默认授权声明
+          default: CC0  # 默认授权声明
           rules:
-            type1: 
-              text: ''
-              desc: ''
+            CC0: 
+              text: 'CC0 1.0 通用 公共领域贡献'
+              desc: '您可以复制、修改、发行和表演本作品，无需要求同意，但本作品亦不提供任何担保。'
       # ----------------
       # 打赏组件 (for layout: post)
       donate:
@@ -191,13 +191,13 @@ article:
     # meta library
     meta_library:
       author:
-        avatar: '' 
-        name: '' 
-        url: /
+        avatar: https://attachment.mcbbs.net/uc_server/data/avatar/003/28/10/25_avatar_big.jpg 
+        name: 'Annie Sparklight' 
+        url: https://github.com/Andy-K-Sparklight
       date:
         icon: fa-solid fa-calendar-alt
         title: ''
-        format: 'll' # 日期格式 http://momentjs.com/docs/
+        format: '' # 日期格式 http://momentjs.com/docs/
       # 文章更新日期
       updated:
         icon: ''
@@ -235,7 +235,7 @@ article:
 ############################### Comments ############################### > start
 comments:
   title: '事件评论'
-  subtitle: '您有权保持沉默，但您若决定发言，则它们都将是公开的。<br/>如果您的言论令人不适，它会被删除，且您将被禁言最长达 114514 天。'
+  subtitle: '登录到 GitHub 后，您便可以在此发表评论。<br/>评论千万条，文明第一条。怼刷广熊杠，禁言两行泪。'
   service: giscus
 
   # https://giscus.app
@@ -677,7 +677,7 @@ plugins:
     backgroundColor: 'var(--color-card)' # 默认背景色
     zindex: 2147483647                   # 层级
     copyright:                           # 是否在复制时弹出版权提示，影响范围：ctrl+c、代码块复制按钮、右键复制选项
-      enable: true
+      enable: false
       title: ''
       message: ''
       icon: 'far fa-copyright light-blue'
