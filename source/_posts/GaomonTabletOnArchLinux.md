@@ -3,6 +3,10 @@ title: 高漫数位板在 GNU/Linux 上的驱动方法
 date: 2022-08-09 00:00:00
 categories:
   - 事件记录
+tags:
+  - GNU/Linux
+  - 驱动程序
+  - 数位板
 description: 「可是这里没有驱动程序啊！」<br/>「你疯了吗？你到底是不是骇客？」
 ---
 

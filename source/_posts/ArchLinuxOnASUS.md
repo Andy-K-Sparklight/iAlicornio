@@ -1,9 +1,13 @@
 ---
-title: ArchLinux 在 ASUS 笔记本电脑上的调优
+title: Arch Linux 在 ASUS 笔记本电脑上的调优
 date: 2022-08-06 00:00:00
 categories:
   - 简要事件模拟
-description: 好马配好鞍，好本配好软。<br/>硬件只有运行得好与坏之分，绝无能否运行之别。
+tags:
+  - GNU/Linux
+  - 驱动程序
+  - ASUS
+description: 硬件只有运行得好与坏之分，绝无能否运行之别。
 ---
 
 ## 欢迎

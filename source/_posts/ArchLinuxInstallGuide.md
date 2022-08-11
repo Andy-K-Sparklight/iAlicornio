@@ -3,6 +3,9 @@ title: Arch Linux 安装初级指南
 date: 2022-08-03 00:00:00
 categories:
   - 实景事件模拟
+tags:
+  - Arch Linux
+  - GNU/Linux
 description: 它并不困难， 只是有点特别。<br/>这是属于你的世界，我很荣幸为你敲开它的大门。
 ---
 
@@ -184,7 +187,7 @@ Arch Linux 难用吗？**难，但是也不难**。所有说 Arch 难用的人�
     
     如果你希望安装双系统，原先的操作系统也应当由 UEFI 引导。
     
-    Windows 11 及之后的版本不再支持 Legacy BIOS，所以以后 Legacy BIOS 会很快被淘汰。截至本文写作时，已经有相当多的机型不再支持 Legacy BIOS。
+    Windows 11 及之后的版本不再支持 Legacy BIOS，所以以后 Legacy BIOS 会很快被淘汰。截至本文写作时，已经有相当多的机型不再默认开启 Legacy BIOS 的支持。
   
   - 至少 2 GiB 的 RAM，但建议有 4 GiB 以上。
     
@@ -225,6 +228,8 @@ Arch Linux 难用吗？**难，但是也不难**。所有说 Arch 难用的人�
 - 另一台计算机（是的！），这用来浏览资料和处理一些应急情况：
   
   - 最好是另一台 Arch，但这种情况不常见。
+    
+    如果真的是这样，那么可以试着直接克隆操作系统，而不必重新安装。
   
   - 其次是另一台 GNU/Linux，有些软件包是可以直接复制的，它们也更容易解决安装时遇到的问题。
   
